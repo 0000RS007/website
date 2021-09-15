@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>New Launch v1.0.0 | Responsive Coming Soon Page HTML</title>
+    <title>Web-Page</title>
     <meta name="description" content="Premiun theme responsive Coming Soon Page HTML, clean code">
     <meta name="keywords" content="	coming soon, construction, creative, design, fullpage, fullscreen, information, keyboard, maintenance, modern, onepage, perfect, responsive, smart">
     <meta name="author" content="mzworks">
@@ -30,7 +30,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png">
     
   </head>
-  <body class='video-youtube-background'>
+  <body>
     <!-- Start Loader -->
     <div class='loading'>
       <div class='loader'>
@@ -81,10 +81,6 @@
       </div>
     </header>
     <!-- End Header -->
-    
-    <!-- Single Video Youtube -->
-    <div class='video-player' data-property="{videoURL:'http://youtu.be/a-11dtG7aK4',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1, showControls:false}"></div>
-    <!-- Page Overlay -->
     <!-- Sidebar navigation -->
     <nav class='sidebar-nav' id='sidebar-nav'>
       <ul>
@@ -141,24 +137,26 @@
     <!-- End Sidebar navigation -->
     
     <div class='page-wrap' id='fullpage'>
+      <!-- Particles Background -->
+      <canvas class='bg-particles' id='bg-particles'></canvas>
       
       <!-- Start Welcome -->
-      <section class='welcome section-content section'>
+      <section class='welcome section-content section background-parallax bg-image-1'>
         <div class='overlay'></div>
         <div class='container'>
           <div class='row'>
-            <div class='col-sm-12 text-center'>
-              <h1 class='section-title animated onstart' data-animation-delay='0' data-animation='fadeInUp'>
+            <div class='col-sm-12'>
+              <h1 class='section-title'>
                 We are <span class="highlight f-bold">coming</span> here soon
               </h1>
-              <div class='with-lines onstart animated text-center' data-animation-delay='100' data-animation='fadeInUp' id='clock'></div>
+              <div id='clock'></div>
               <div class='mg-t'>
-                <a class='btn btn-outline btn-lg js-to-slide animated btn-rounded onstart' data-animation-delay='300' data-animation='fadeInUp' data-slide='2' href='#'>
-                  About Us
-                  <i class='fa fa-angle-down'></i>
-                </a>
-                <a class='btn btn-color btn-lg js-to-slide animated onstart btn-rounded' data-animation-delay='400' data-animation='fadeInUp' data-slide='4' href='#'>
+                <a class='btn btn-color btn-lg js-to-slide animated onstart' data-animation-delay='300' data-animation='fadeInUp' data-slide='4' href='#'>
                   Notify Me
+                </a>
+                <a class='btn btn-outline btn-lg js-to-slide animated onstart' data-animation-delay='400' data-animation='fadeInUp' data-slide='2' href='#'>
+                  Learn more
+                  <i class='fa fa-angle-down'></i>
                 </a>
               </div>
             </div>
@@ -168,7 +166,7 @@
       <!-- End Welcome -->
       
       <!-- Start About -->
-      <section class='about section'>
+      <section class='about section background-parallax bg-image-2'>
         <div class='overlay'></div>
         <div class='container'>
           <div class='row'>
@@ -188,7 +186,7 @@
                       atque ipsam assumenda tenetur rerum repellendus?
                     </p>
                   </div>
-                  <a class='btn btn-outline btn-rounded btn-lg js-link-video animated' data-animation-delay='200' data-animation='fadeInUp' href='http://www.youtube.com/watch?v=Zs8T-FCEvXg'>
+                  <a class='btn btn-outline btn-lg js-link-video animated' data-animation-delay='200' data-animation='fadeInUp' data-slide='4' href='http://www.youtube.com/watch?v=Zs8T-FCEvXg'>
                     Watch Video
                     <i class="fa fa-play" aria-hidden="true"></i>
                   </a>
@@ -201,7 +199,7 @@
       <!-- End About -->
       
       <!-- Start Gallery -->
-      <section class='section'>
+      <section class='section background-parallax bg-image-6'>
         <div class='overlay'></div>
         <div class='container'>
           <div class='row'>
@@ -376,7 +374,7 @@
       <!-- End Gallery -->
       
       <!-- Start Subscribe -->
-      <section class='subscribe section'>
+      <section class='subscribe section background-parallax bg-image-3'>
         <div class='overlay'></div>
         <div class='container'>
           <div class='row'>
@@ -392,7 +390,7 @@
           <div class='row'>
             <div class='col-sm-5 animated' data-animation-delay='300' data-animation='fadeInUp'>
               <form action='#' class='mailchimp-form subscribe-form-wrap'>
-                <div class='input-group input-group-roundend'>
+                <div class='input-group'>
                   <input class='form-control' name='email' placeholder='Your email' type='email'>
                   <div class='input-group-btn'>
                     <button class='btn btn-outline btn-inverse' type='submit'>
@@ -411,17 +409,17 @@
       <!-- End Subscribe -->
       
       <!-- Start Services -->
-      <section class='about section'>
+      <section class='about section background-parallax section-no-space bg-image-2'>
+        <div class='overlay light'></div>
         <div class='owl-carousel full-page-carousel owl-theme'>
           <div class='item'>
-            <div class='overlay'></div>
             <div class='carousel-item-inner js-vertical-middle text-center'>
               <h1 class='section-title'>
                 Services
               </h1>
             </div>
           </div>
-          <div class='item'>
+          <div class='item bg-image-4'>
             <div class='overlay'></div>
             <div class='carousel-item-inner js-vertical-middle'>
               <div class='text-center'>
@@ -434,14 +432,13 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta consequuntur eum enim commodi, minima
                   </p>
                 </div>
-                <a class='btn btn-outline btn-rounded'>
+                <a class='btn btn-outline'>
                   More Details
                 </a>
               </div>
             </div>
           </div>
-          <div class='item'>
-            <div class='overlay'></div>
+          <div class='item color-dark bg-white'>
             <div class='carousel-item-inner js-vertical-middle'>
               <div class='text-center'>
                 <div class='mg-b'>
@@ -453,13 +450,13 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta consequuntur eum enim commodi, minima
                   </p>
                 </div>
-                <a class='btn btn-outline btn-rounded'>
+                <a class='btn btn-outline-dark'>
                   More Details
                 </a>
               </div>
             </div>
           </div>
-          <div class='item'>
+          <div class='item bg-primary'>
             <div class='overlay'></div>
             <div class='carousel-item-inner js-vertical-middle'>
               <div class='text-center'>
@@ -472,14 +469,13 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta consequuntur eum enim commodi, minima
                   </p>
                 </div>
-                <a class='btn btn-outline btn-rounded'>
+                <a class='btn btn-outline'>
                   More Details
                 </a>
               </div>
             </div>
           </div>
           <div class='item'>
-            <div class='overlay'></div>
             <div class='carousel-item-inner js-vertical-middle'>
               <div class='text-center'>
                 <div class='mg-b'>
@@ -491,7 +487,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta consequuntur eum enim commodi, minima
                   </p>
                 </div>
-                <a class='btn btn-outline btn-rounded' href='#'>
+                <a class='btn btn-outline' href='#'>
                   More Details
                 </a>
               </div>
@@ -512,7 +508,7 @@
       <!-- End Services -->
       
       <!-- Start Contacts -->
-      <section class='section-content contacts section'>
+      <section class='section-content contacts section background-parallax bg-image-4'>
         <div class='overlay'></div>
         <div class='container'>
           <div class='row'>
@@ -532,7 +528,7 @@
                     <textarea class='form-control form-control-no-space border-bottom' cols='30' id='contact-form-message' name='message' placeholder='Message' rows='5'></textarea>
                   </div>
                   <div class='form-group mg-t'>
-                    <button class='btn btn-color btn-rounded btn-lg btn-submit animated' data-animation-delay='350' data-animation='fadeInUp' type='submit'>
+                    <button class='btn btn-color btn-lg btn-submit animated' data-animation-delay='350' data-animation='fadeInUp' type='submit'>
                       Send Message
                       <i class='fa fa-paper-plane'></i>
                     </button>
